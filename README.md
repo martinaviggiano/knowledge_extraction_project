@@ -1,6 +1,7 @@
 # knowledge_extraction_project
 
-This project presents an analysis of textual data of United States case law dataset provided by [Caselaw Access Project](https://case.law/bulk/download/). 
+This project is based on the analysis of textual data of United States case law dataset provided by [Caselaw Access Project](https://case.law/bulk/download/). 
+
 The object is to study relevant terms within the text of court decisions and to measure frequency and correlation between words.
 
 ## Note
