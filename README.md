@@ -8,7 +8,7 @@ The object is to study relevant terms within the text of court decisions and to 
 
 The work has been split in 3 pages:
 
-- *01_Pre-processing* in which we imported and cleaned data;
-- *02_Steps* in which we studied term frequecies;
-- *03_Grams_PMI* in which we computed cosine similarity. 
+- *01_Pre_processing* in which we imported and cleaned data;
+- *02_Term_frequency* in which we studied term frequecies;
+- *03_Word2Vec_PMI* in which we computed cosine similarity and studied co-occurrences. 
 
