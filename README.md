@@ -10,5 +10,6 @@ The work has been split in 3 pages:
 
 - *01_Pre_processing* in which we imported and cleaned data;
 - *02_Term_frequency* in which we studied term frequecies;
-- *03_Word2Vec_PMI* in which we computed cosine similarity and studied co-occurrences. 
+- *03_Word2Vec_PMI* in which we computed cosine similarity and studied co-occurrences;
+- *04_Results* in which we can test models defined in the previous steps.
 
