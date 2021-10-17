@@ -88,7 +88,7 @@ def load_eda(narco_data, narco_schedule,  models_1, models_2):
     
     st.write("On this page you can use the interactive tools to explore data and gather intormation about them.") 
     
-    st.markdown("<h3><strong>Data Table Visualization</strong></h3>", unsafe_allow_html=True)
+    st.markdown("<h3><strong>Visualization</strong></h3>", unsafe_allow_html=True)
 
     st.write("WRITE HERE.")
     st.write("WRITE HERE.")
@@ -105,12 +105,13 @@ def load_eda(narco_data, narco_schedule,  models_1, models_2):
 
     if word1 : #and word2
         if word1 is not None : #and word2 is not None
-            word1 = st.empty()
+            #word1 = st.empty()
             #word2 = st.empty()
-        try:
-            similar_words  = most_similar_terms(models_1, word1, 10, value=False)
-        except:
-            print('No')
+            try:
+                similar_words  = most_similar_terms(models_1, word1, 10, value=False)
+                print(similar_words)
+            except:
+                print('No')
         
         #similar_list_value = most_similar_terms(
          #   model_, word, n, value=True)
@@ -119,34 +120,16 @@ def load_eda(narco_data, narco_schedule,  models_1, models_2):
         #prediction_pos, color_pos = get_text_color(pred_pos)
 
         st.markdown(
-            "List of similar words:", similar_words, unsafe_allow_html=True)
-        #st.markdown(similar_words)
-
-        #st.markdown(
-            #"<h3><strong>Model 2: Logistic Regression including only some Parts of Speech</h3></strong>", unsafe_allow_html=True)
-        #st.markdown(
-            #f'The sentence has been classified as: <span style="color:{color_pos}">**{prediction_pos}**</span>', unsafe_allow_html=True)
-   
+            "List of similar words:", unsafe_allow_html=True)
+        #similar_words
 
          
 
 def load_classif(narco_data, narco_schedule,  models_1, models_2):
     st.markdown('''
-    On this page you can test two of the models that have been trained for the project.
-    
-    In both cases, the lables were balanced with <em>RandomUnderSampler</em>.
-    
-    1. <ins><em>Support Vector Machine</em></ins> trained on Lemmatized text;
-    2. <ins><em>Logistic Regression</em></ins> over data including only some parts of speech.
-    
-    In particular, the second model takes into account only the following list of parts of speech: composed of nouns, proper nouns, verbs, adjectives and pronouns.
-    
-    To do so, you need to write down the sentence you want to test in the board below.
-    
-    As you cas see, there is a sentence displayed by default. It was choosen since it clearly shows that the two models work differently: in this case, the first method performs better in terms of classification between <strong>Hate Speech</strong> and <strong>Not Hate Speech</strong>.
     ''', unsafe_allow_html=True)  
     
-    written_sent = st.text_input('Write your sentence here:', "I hate all of you!")
+    
 
     
 
