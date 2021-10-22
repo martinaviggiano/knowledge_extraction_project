@@ -6,7 +6,7 @@ The object is to study relevant terms within the text of court decisions and to 
 
 ## Note
 
-The work has been split in 3 pages:
+The work has been split in 4 pages:
 
 - *01_Pre_processing* in which we imported and cleaned data;
 - *02_Term_frequency* in which we studied term frequecies;
